@@ -18,8 +18,8 @@ plugins:
             show_source: False
             show_root_heading: True
             merge_init_into_class: True
-  - material/search
-  - git-revision-date-localized
+  # - material/search
+  # - git-revision-date-localized
   - mkdocs-jupyter:
       include_source: True
       include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
