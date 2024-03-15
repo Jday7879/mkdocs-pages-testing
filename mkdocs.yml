@@ -1,7 +1,7 @@
 site_name: My Docs
 
 theme:
-  name: mkdocs
+  name: tech_docs_template
   features:
     - navigation.tabs
     - navigation.tabs.sticky
