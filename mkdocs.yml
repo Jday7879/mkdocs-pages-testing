@@ -1,0 +1,34 @@
+site_name: My Docs
+
+theme:
+  name: tech_docs_template
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            # All options can be found at: https://mkdocstrings.github.io/python/usage/#globallocal-options
+            docstring_style: numpy
+            show_signature_annotations: True
+            show_source: False
+            show_root_heading: True
+            merge_init_into_class: True
+  - material/search
+  - git-revision-date-localized
+  - mkdocs-jupyter:
+      include_source: True
+      include: ["*.ipynb"] # Default: ["*.py", "*.ipynb"]
+      ignore: ["*.py"]
+      remove_tag_config:
+        remove_input_tags:
+          - hide_code
+        remove_all_outputs_tags:
+          - hide_out
+
+nav:
+    - test: index.md
