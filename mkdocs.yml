@@ -31,4 +31,5 @@ plugins:
           - hide_out
 
 nav:
-    - test: index.md
+    - Project Documentation: index.md
+    - Information: info.md
